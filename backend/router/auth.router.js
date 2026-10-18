@@ -17,4 +17,4 @@ router.post("/verifyOtp", validationPipe(otpSchema), verifyOtp);
 router.put("/resetPwd", validationPipe(newPwdSchema), resetPwd);
 
 
-module.exports = { router };
+module.exports = { authRouter: router };
