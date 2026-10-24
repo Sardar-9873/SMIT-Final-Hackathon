@@ -5,7 +5,7 @@ const { MongoClient } = require("mongodb");
 env.config();
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
-const client = new MongoClient(process.env.CLOUD_DB_URI);
+const client = new MongoClient(process.env.DB_URI);
 
 let db;
 
